@@ -1,11 +1,14 @@
-
 const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PATH_DIST = path.resolve(__dirname, '\\dist');
+const PATH_SRC = path.resolve(__dirname, '\\src');
 
 module.exports = {
+	entry: PATH_SRC + "\\index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
+		path: PATH_DIST,
   },
   module: {
     rules: [
@@ -32,7 +35,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [
+	plugins: [
+		new ESLintPlugin({
+			files: PATH_SRC + "\\js",
+		}),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
