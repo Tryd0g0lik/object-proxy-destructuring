@@ -21,13 +21,7 @@ const character = {
 	],
 };
 
-// const attack = {
-// 	id: 9,
-// 	name: 'Нокаутирующий удар',
-// 	icon: 'http://...',
-// };
-
-function distructions(objs) {
+export default function distructions(objs) {
 	const { ...datas } = objs;
 	const heroes = [];
 	for (const hero of datas.special) {
@@ -39,5 +33,3 @@ function distructions(objs) {
 	}
 	return heroes;
 }
-
-console.log(distructions(character));
