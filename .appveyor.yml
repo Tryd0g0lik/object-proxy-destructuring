@@ -1,6 +1,6 @@
 version: '1.0.{build}'
 image: Visual Studio 2015
-stack: Node 18
+stack: Node 18.14.1
 
 shallow_clone: true
 branches:
