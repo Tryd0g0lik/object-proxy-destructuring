@@ -20,13 +20,6 @@ const character = {
 		},
 	],
 };
-
-// const attack = {
-// 	id: 9,
-// 	name: 'Нокаутирующий удар',
-// 	icon: 'http://...',
-// };
-
 function distructions(objs) {
 	const { ...datas } = objs;
 	const heroes = [];
