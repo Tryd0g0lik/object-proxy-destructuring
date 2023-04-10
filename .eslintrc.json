@@ -10,6 +10,8 @@
 		"sourceType": "module"
 	},
 	"rules": {
+		"object-curly-newline": 0,
+		"indent": 0,
 		"no-undef": 0,
 		"no-restricted-syntax": [
 			"error",
@@ -22,10 +24,6 @@
 			{
 				"allowIndentationTabs": true
 			}
-		],
-		"indent": [
-			"error",
-			2
 		]
 	}
 }
